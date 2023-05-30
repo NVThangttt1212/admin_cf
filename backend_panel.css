@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --color-black: #000;
+    --color-grey: #4b4947;
+    --color-begie: #D3AD7F;
+}
+
+.container {
+    position: relative;
+}
+
+/* side header */
+.side-header {
+    position: fixed;
+    height: 12vh;
+    display: flex;
+    width: 100vw;
+    position: fixed;
+    background: var(--color-black);
+    color: var(--color-begie);
+    z-index: 1;
+    
+}
+
+.brand-img img {
+    position: absolute;
+    height: 120%;
+    left: 3%;
+    bottom: -42%;
+}
+
+.user {
+    position: absolute;
+    top: 34%;
+    right: 35%;
+}
+
+.user h2 {
+    margin-right: 18px;
+}
+
+.logout {
+    position: absolute;
+    right: 3%;
+    top: 34%;
+    font-size: 28px;
+    
+}
+
+.logout a {
+    color: var(--color-begie);
+}
+
+/* side body */
+.side-body {
+    position: absolute;
+    margin-top: 12vh;
+    display: flex;
+    height: 88vh;
+    width: 100vw;
+    z-index: 0;
+}
+.side-navbar {
+    position: fixed;
+    background: var(--color-black);
+    height: 100%;
+    width: 14%;
+}
+
+.side-navbar ul {
+    margin-top: 50px;
+}
+.side-navbar button { 
+    width: 100%;
+    padding: 30px 25px;
+    font-size: 20px;
+    color: var(--color-begie);
+    background: var(--color-black);
+}
+
+.side-navbar button:hover {
+    cursor: pointer;
+    color: #000;
+    background: var(--color-begie);
+}
+
+.side-main {
+    width: 85vw;
+    height: 100%;
+    margin-left: 15vw;
+}
